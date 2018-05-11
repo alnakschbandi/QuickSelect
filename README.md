@@ -1,5 +1,6 @@
 # QuickSelect
-This code is a an implementation of QuickSelect Algorithm in Python
+This code is a an implementation of QuickSelect Algorithm in Python.
+
 QuickSelect is a very similar algorithm to QuickSort as both of them are Divide&Conqure algorithms and both of them use Partition to divide the array.
 
 The code contains two functions:
