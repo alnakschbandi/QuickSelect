@@ -15,7 +15,7 @@ def kthlargest(a, k):
     split_point = partition(a, l, r) #choosing a pivot and saving its index
     if split_point == r - k + 1: #if the choosen pivot is the correct elemnt, then return it
         result = a[split_point]
-    elif split_point > r - k + 1: #if the element we are looking for is in the left part to the pivot then call 'kthlargest' on that part after modifing k
+    elif split_point > r - k + 1: #if the element we are looking for is in the right part to the pivot then call 'kthlargest' on that part after modifing k
         result = kthlargest(a[:split_point], k - (r - split_point + 1))
     else: #if the element we are looking for is in the left part to the pivot then call 'kthlargest' on that part
         result = kthlargest(a[split_point + 1:r + 1], k)
